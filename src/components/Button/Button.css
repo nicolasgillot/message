@@ -1,0 +1,51 @@
+@import '../../styles/variables.css';
+
+/* ==========================================================================
+   #BUTTON
+   ========================================================================== */
+
+.c-button {
+  display: inline-block;
+  position: relative;
+  padding: 0;
+  transition:
+    background-color var(--duration-immediately) linear,
+    color var(--duration-immediately) linear;
+  border: var(--border-width-thin) solid transparent;
+  background: transparent;
+  background-clip: border-box;
+  color: var(--color-text-link);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-button);
+  text-decoration: none;
+  white-space: normal;
+  user-select: none;
+
+  @nest
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+  }
+
+  @nest
+  &:hover,
+  &:focus {
+    color: var(--color-text-link-hover);
+  }
+
+  @nest &:focus {
+    @mixin focus-button;
+  }
+
+  @nest &:active {
+    color: var(--color-text-link-active);
+  }
+}
+
+.c-button--neutral {
+  background-color: var(--color-background-button-default);
+
+  @mixin button;
+  @mixin button-base;
+}

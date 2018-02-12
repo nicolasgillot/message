@@ -1,0 +1,16 @@
+/* ==========================================================================
+   #PAGE
+   ========================================================================== */
+
+html {
+  min-height: 100%;
+  font-size: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+  color: var(--color-text-default);
+  font-family: var(--font-family);
+  font-size: var(--font-size-medium);
+  line-height: var(--line-height-text);
+}

@@ -1,0 +1,73 @@
+@import '../../styles/variables.css';
+
+/* ==========================================================================
+   #RADIO
+   ========================================================================== */
+
+.c-radio {
+  display: inline-block;
+
+  @nest & .c-radio--faux {
+    display: inline-block;
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    transition:
+      border var(--duration-quickly) linear,
+      background-color var(--duration-quickly) linear;
+    border: var(--border-width-thin) solid var(--color-border-input);
+    border-radius: var(--border-radius-circle);
+    background: var(--color-background-input);
+    vertical-align: middle;
+  }
+
+  @nest & .c-form-element__label {
+    display: inline;
+    font-size: var(--font-size-medium);
+    vertical-align: middle;
+  }
+
+  @nest & [type='radio'] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+
+    @nest
+    &:checked + .c-radio--faux,
+    &:checked ~ .c-radio--faux,
+    &:checked + .c-radio__label .c-radio--faux {
+      background: var(--color-background-input);
+
+      @nest &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0.5rem;
+        height: 0.5rem;
+        transform: translate3d(-50%, -50%, 0);
+        border-radius: var(--border-radius-circle);
+        background: var(--color-brand);
+      }
+    }
+
+    @nest
+    &:focus + .c-radio--faux,
+    &:focus ~ .c-radio--faux,
+    &:focus + .c-radio__label .c-radio--faux {
+      border-color: var(--color-border-input-active);
+      box-shadow: var(--shadow-button-focus);
+    }
+  }
+}
+
+.c-form-element .c-radio [type='radio'] + .c-radio--faux,
+.c-form-element .c-radio [type='radio'] ~ .c-radio--faux,
+.c-radio [type='radio'] + .c-radio__label .c-radio--faux {
+  margin-right: var(--spacing-x-small);
+}

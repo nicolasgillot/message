@@ -1,0 +1,60 @@
+@import '../../styles/variables.css';
+
+/* ==========================================================================
+   #FORM ELEMENT
+   ========================================================================== */
+
+.c-form-element {
+  position: relative;
+
+  @nest &.has-error {
+    @nest & .c-form-element__help {
+      color: var(--color-text-error);
+    }
+  }
+}
+
+.c-form-element__label {
+  display: inline-block;
+  margin-right: var(--spacing-small);
+  margin-bottom: var(--spacing-xx-small);
+  color: var(--color-text-label);
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-text);
+
+  @nest &:empty {
+    margin: 0;
+  }
+}
+
+.c-form-element__control {
+  @nest & .c-radio, & .c-checkbox {
+    display: block;
+  }
+}
+
+.c-form-element__icon {
+  display: inline-block;
+  position: relative; /* Since this container can have a tooltip */
+}
+
+.c-form-element__help {
+  display: block;
+  margin-top: var(--spacing-xx-small);
+  font-size: var(--font-size-small);
+}
+
+.c-form-element__static {
+  display: inline-block;
+  min-height: calc(var(--line-height-button) + 2px); /* For IE */
+  line-height: var(--line-height-button);
+
+  @nest &.text-longform {
+    line-height: var(--line-height-text);
+  }
+}
+
+.required {
+  margin: 0 var(--spacing-xx-small) 0 var(--spacing-xxx-small);
+  color: var(--color-text-error);
+}

@@ -1,0 +1,25 @@
+/* ==========================================================================
+   #MEDIA
+   ========================================================================== */
+
+.o-media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.o-media__body {
+  flex: 1;
+
+  /* This fixes an issue with truncation inside flexbox due
+  to the changes in flex basis (already in FFOX, coming to Chrome) */
+  min-width: 0;
+}
+
+.o-media__body,
+.o-media__body > :last-child {
+  margin-bottom: 0;
+}
+
+.o-media--center {
+  align-items: center;
+}

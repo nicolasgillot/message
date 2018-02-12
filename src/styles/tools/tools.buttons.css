@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+:root {
+  @define-mixin button {
+    padding-right: var(--spacing-medium);
+    padding-left: var(--spacing-medium);
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  @define-mixin button-interactions {
+    @nest
+    &:hover,
+    &:focus {
+      background-color: var(--color-background-button-default-hover);
+    }
+
+    @nest &:active {
+      background-color: var(--color-background-button-default-active);
+    }
+  }
+
+  @define-mixin button-base {
+    border: var(--border-width-thin) solid var(--color-border-button-default);
+
+    @mixin button-interactions;
+  }
+}

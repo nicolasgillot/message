@@ -1,0 +1,13 @@
+/* ==========================================================================
+   #FORMS
+   ========================================================================== */
+
+:root {
+  @define-mixin form-element-vertical-spacing {
+    margin-top: var(--spacing-small);
+
+    @media (--mq-small-min) {
+      margin-top: var(--spacing-x-small);
+    }
+  }
+}

@@ -1,0 +1,38 @@
+/* ==========================================================================
+   #TEXT COLOR
+   ========================================================================== */
+
+:root {
+  --color-text-action-label: #54698d;
+  --color-text-action-label-active: #16325c;
+  --color-text-button-brand: #fff;
+  --color-text-button-brand-disabled: #fff;
+  --color-text-button-brand-hover: #fff;
+  --color-text-button-default: #0070d2;
+  --color-text-button-default-disabled: #d8dde6;
+  --color-text-button-inverse: #e0e5ee;
+  --color-text-button-inverse-disabled: rgba(255, 255, 255, 0.15);
+  --color-text-default: #16325c;
+  --color-text-error: #c23934;
+  --color-text-icon-default: #54698d;
+  --color-text-icon-default-active: #00396b;
+  --color-text-icon-default-disabled: #d8dde6;
+  --color-text-icon-default-hover: #0070d2;
+  --color-text-icon-inverse: #fff;
+  --color-text-inverse: #fff;
+  --color-text-label: #54698d;
+  --color-text-link: #0070d2;
+  --color-text-link-active: #00396b;
+  --color-text-link-focus: #005fb2;
+  --color-text-link-hover: #005fb2;
+  --color-text-link-inverse: #fff;
+  --color-text-link-inverse-active: rgba(255, 255, 255, 0.5);
+  --color-text-link-inverse-disabled: rgba(255, 255, 255, 0.15);
+  --color-text-link-inverse-hover: rgba(255, 255, 255, 0.75);
+  --color-text-placeholder: #54698d;
+  --color-text-tab-label-selected: #0070d2;
+  --color-text-warning: #ffb75d;
+  --color-text-weak: #54698d;
+  --fill-header-button: #9faab5;
+  --fill-header-button-hover: #005fb2;
+}

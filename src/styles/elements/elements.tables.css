@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #TABLES
+   ========================================================================== */
+
+/**
+ * 1. Ensure tables fill up as much space as possible.
+ */
+
+table {
+  width: 100%; /* [1] */
+}
+
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+th,
+td {
+  text-align: left;
+}

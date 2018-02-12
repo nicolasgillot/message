@@ -1,0 +1,29 @@
+{
+  "addMessage": {
+    "date": "2018-02-11T13:32:56.742Z",
+    "id": 4
+  },
+  "messages": [
+    {
+      "date": "2018-02-11T08:44:40.491Z",
+      "id": 1,
+      "private": false,
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "userId": 1
+    },
+    {
+      "date": "2018-02-11T09:05:21.567Z",
+      "id": 2,
+      "private": true,
+      "text": "Donec at egestas mauris, volutpat aliquet elit.",
+      "userId": 1
+    },
+    {
+      "date": "2018-02-11T11:30:12.294Z",
+      "id": 3,
+      "private": false,
+      "text": "Maecenas in nunc interdum risus mollis semper.",
+      "userId": 1
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "Message.addMessageButtonLabel": "Add message",
+  "Message.filter.all": "All",
+  "Message.filter.private": "Only private",
+  "Message.filter.public": "Only public",
+  "Message.privateCheckboxLabel": "Private?",
+  "Message.textareaPlaceholder": "Write your message"
+}

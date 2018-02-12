@@ -1,0 +1,19 @@
+@import '../../styles/variables.css';
+
+/* ==========================================================================
+   #FORM
+   ========================================================================== */
+
+/* STACKED FORM */
+
+.c-form--stacked .c-form-element {
+  display: block;
+
+  @nest & + .c-form-element {
+    @mixin form-element-vertical-spacing;
+  }
+
+  @nest & .c-checkbox, & .c-radio {
+    display: block;
+  }
+}

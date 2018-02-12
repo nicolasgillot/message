@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #BACKGROUND COLOR
+   ========================================================================== */
+
+:root {
+  --color-background-button-default: #fff;
+  --color-background-button-default-active: #eef1f6;
+  --color-background-button-default-disabled: #fff;
+  --color-background-button-default-hover: #f4f6f9;
+  --color-background-input: #fff;
+  --color-background-input-active: #fff;
+  --color-background-highlight-search: #fff03f;
+  --color-background-selection: #d8edff;
+  --color-brand: #1589ee;
+}

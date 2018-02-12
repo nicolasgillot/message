@@ -1,0 +1,26 @@
+@import '../../styles/variables.css';
+
+/* ==========================================================================
+   #TEXTAREA
+   ========================================================================== */
+
+.c-textarea {
+  width: 100%;
+  padding: var(--spacing-x-small) var(--spacing-small);
+  transition:
+    border var(--duration-quickly) linear,
+    background-color var(--duration-quickly) linear;
+  border: var(--border-width-thin) solid var(--color-border-input);
+  background-color: var(--color-background-input);
+  color: var(--color-text-default);
+  resize: vertical;
+
+  @nest
+  &:focus,
+  &:active {
+    border-color: var(--color-border-input-active);
+    outline: 0;
+    background-color: var(--color-background-input-active);
+    box-shadow: var(--shadow-button-focus);
+  }
+}
